@@ -14,5 +14,6 @@ Transmission is a BitTorrent client which features a simple interface on top of 
 
 ### Network Ports:
  * 9091 : Transmission rpc interface.
- * 51413 : Default BitTorrent communications port the Transmission uses.
+ * 64005 : Default BitTorrent communications port the Transmission uses.
+ * 64000-64010 : Port range for Transmission to use.
 
