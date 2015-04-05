@@ -1,5 +1,5 @@
 #/bin/bash
-CONF=/srv/transmission/config
+CONF=/srv/config
 
 if [ ! -f ${CONF}/settings.json ]; then
   cp /tmp/settings.json ${CONF}
