@@ -1,4 +1,4 @@
-FROM vbatts/slackware-base:latest
+FROM roninkenji/slackware-base:latest
 MAINTAINER roninkenji
 
 RUN echo "http://ftp.osuosl.org/.2/slackware/slackware64-14.1/" >> /etc/slackpkg/mirrors
