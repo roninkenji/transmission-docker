@@ -6,5 +6,5 @@ if [ ! -f ${CONF}/settings.json ]; then
   chown -Rv nobody /srv/config /srv/downloads /srv/watchdir
 fi
 
-exec /usr/bin/transmission-daemon -f -g /srv/config
+exec /usr/bin/transmission-daemon -f -g /srv/config ${EXTRAOPTS}
 
