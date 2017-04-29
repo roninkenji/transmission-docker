@@ -16,3 +16,10 @@ Transmission is a BitTorrent client which features a simple interface on top of 
  * 9091 : Transmission rpc interface.
  * 64000 : Default BitTorrent communications port the Transmission uses.
 
+### Environment (Optional):
+Defaults are designed to work with unraid
+ * TRANSMISSION_USER : user for running transmission process (default: user1)
+ * TRANSMISSION_USERID : userid of TRANSMISSION_USER (default: 99)
+ * TRANSMISSION_GROUP : group for running transmission process (default: users)
+ * TRANSMISSION_GROUPID : groupid of TRANSMISSION_GROUP (default: 100)
+
