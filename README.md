@@ -1,5 +1,5 @@
 # transmission-docker
-Transmission bittorrent client under Slackware userspace
+Transmission bittorrent client under Alpine Linux userspace
 
 [Transmission project page](www.transmissionbt.com)
 
@@ -8,12 +8,11 @@ Transmission is a BitTorrent client which features a simple interface on top of 
 ## Directions:
 
 ### Data Volumes:
- * /srv/config : in this path Transmission will store it's configuration files.
- * /srv/downloads : in this path Transmission will store the downloaded files.
- * /srv/watchdir : in this path Transmission will wach for new torrents to download.
+ * /config : in this path Transmission will store it's configuration files.
+ * /downloads : in this path Transmission will store the downloaded files.
+ * /watchdir : in this path Transmission will wach for new torrents to download.
 
 ### Network Ports:
  * 9091 : Transmission rpc interface.
- * 64005 : Default BitTorrent communications port the Transmission uses.
- * 64000-64010 : Port range for Transmission to use.
+ * 64000 : Default BitTorrent communications port the Transmission uses.
 
