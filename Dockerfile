@@ -1,6 +1,7 @@
 FROM alpine:latest
 LABEL Author=roninkenji
 
+COPY scrape_packetsize.patch /tmp
 RUN cd /tmp && \
     apk update && \
     apk add libevent curl && \
@@ -18,6 +19,7 @@ RUN cd /tmp && \
 		--with-inotify \
 		--enable-cli \
     && \
+    patch -p0 < /tmp/scrape_packetsize.patch && \
     make && \
     make install && \
     apk del build-dependencies
