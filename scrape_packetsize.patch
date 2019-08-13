@@ -6,8 +6,8 @@
      {
 -      const int sndbuf = isScrape ? 4096 : 1024;
 -      const int rcvbuf = isScrape ? 4096 : 3072;
-+      const int sndbuf = 4096;
-+      const int rcvbuf = 4096;
++      const int sndbuf = 8192;
++      const int rcvbuf = 8192;
        setsockopt (fd, SOL_SOCKET, SO_SNDBUF, (const void *) &sndbuf, sizeof (sndbuf));
        setsockopt (fd, SOL_SOCKET, SO_RCVBUF, (const void *) &rcvbuf, sizeof (rcvbuf));
      }
