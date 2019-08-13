@@ -1,5 +1,5 @@
 FROM alpine:latest
-LABEL Author=roninkenji
+LABEL maintainer=roninkenji
 
 COPY scrape_packetsize.patch /tmp
 RUN cd /tmp && \
