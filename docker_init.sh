@@ -14,5 +14,4 @@ getent passwd ${TRANSMISSION_USER} || adduser -g "Transmission User" -D -G ${TRA
 chown -v ${TRANSMISSION_USER}:${TRANSMISSION_GROUP} /config /downloads /watchdir
 chown -Rv ${TRANSMISSION_USER}:${TRANSMISSION_GROUP} /config /watchdir
 
-exec su ${TRANSMISSION_USER} -c "/usr/bin/transmission-daemon -f -g /config -w /downloads -c /watchdir ${EXTRAOPTS}"
-
+exec su ${TRANSMISSION_USER} -c "/usr/local/bin/transmission-daemon -f -g /config -w /downloads -c /watchdir ${EXTRAOPTS}"
